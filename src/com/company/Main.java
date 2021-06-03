@@ -11,6 +11,7 @@ public class Main {
         DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         //я загуглил, в общем я сделал setLenient, чтобы никакие другие форматы не учитывались, чтобы правильным был только dd/MM/yyyy
         format.setLenient(false);
+        System.out.println("Введите дату в формате dd/mm/yyyy");
         String date = scanner.nextLine();
         try {
             format.parse(date);
