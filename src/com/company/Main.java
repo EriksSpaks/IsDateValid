@@ -14,7 +14,6 @@ public class Main {
         //я загуглил, в общем я сделал setLenient, чтобы никакие другие форматы не учитывались, чтобы правильным был только dd/MM/yyyy
         format.setLenient(false);
         System.out.println("Введите дату в формате dd/mm/yyyy");
-        System.out.println();
         String date = scanner.nextLine();
         String[] dayMonthYear = date.split("/");
         try {
